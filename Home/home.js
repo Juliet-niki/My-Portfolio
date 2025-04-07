@@ -32,7 +32,7 @@ const sentences = [
 let sentenceIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
-const speed = 100; // Typing speed (milliseconds per letter)
+const speed = 50; // Typing speed (milliseconds per letter)
 const eraseSpeed = 50; // Erasing speed
 const delayBetweenSentences = 1000; // Delay before erasing
 
@@ -60,10 +60,10 @@ function typeEffect() {
   setTimeout(typeEffect, isDeleting ? eraseSpeed : speed);
 }
 
-// Start typing animation after a delay (e.g., 5 seconds)
+// Start typing animation after a delay
 setTimeout(() => {
   typeEffect();
-}, 5000); // delay in milliseconds
+}, 4500); // delay in milliseconds
 
 // ------- MOUSE HOVER EFFECT -------- //
 displaySideBarTxtControl.forEach((menuLink) => {

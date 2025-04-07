@@ -24,7 +24,6 @@
 }
 
 body {
-  /* background-color: #474747; */
   /* background-image: url("../image/grunge-rough-old-stained-polished-and-empty-smooth-concrete-or-stone-or-wall-texture-beige-grungy-background-of-natural-cement-or-stone-perfect-for-presentation-and-construction-and-design-free-photo.jpg"); */
   background-image: url("../image/background.jpg");
   background-size: cover;
@@ -67,12 +66,10 @@ main {
   margin-top: 15vh;
   gap: 5vw;
   width: 100%;
-  background-color: brown;
 }
 
 .image-wrapper {
   margin-left: 5vw;
-  /* background-color: chartreuse; */
   width: auto;
 }
 
@@ -83,7 +80,6 @@ main {
 }
 
 .name-wrapper {
-  background-color: rgb(255, 0, 179);
   width: 75%;
 }
 
@@ -92,7 +88,6 @@ main {
   font-size: 2.2rem;
   color: #fff;
   height: 7vh;
-  /* background-color: yellow; */
 }
 
 .name-typer {
@@ -101,37 +96,26 @@ main {
   white-space: nowrap;
   overflow: hidden;
   width: 0;
-  color: #fff;
+  color: red;
   border-right: 4px solid #fff;
-  animation: 7s linear 0s 1 normal forwards animate;
-  height: 10vh;
-  /* background-color: blue; */
+  animation: animate 7s linear forwards;
+  height: 8vh;
 }
 
 @keyframes animate {
   0% {
-    width: 0px;
+    width: 0;
   }
-
-  10% {
-    width: 0px;
-  }
-
-  100% {
-    width: 0px;
-  }
-
   70% {
     width: 100%;
   }
-
-  90% {
-    width: 100%;
-  }
-
   100% {
     width: 100%;
   }
+}
+
+.typing-container-wrapper {
+  height: 7vh;
 }
 
 .typing-container {
@@ -143,12 +127,47 @@ main {
   font-size: 1.6rem;
   color: #fff;
   margin-top: 0.5vh;
-  height: 7vh;
-  /* background-color: red; */
+}
+
+.empty {
+  height: 1vh;
+}
+
+.resume-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1vw;
+  color: #fff;
+  font-family: "work-sans-medium";
+  font-size: 1rem;
+  border: 2px solid #fff;
+  border-radius: 11px;
+  width: fit-content;
+  padding: 1vh 0.5vw 1vh 1vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  transition: ease-in-out 0.8s;
+}
+
+.resume-btn:hover {
+  background-color: #74c0fc;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.download-icon {
+  background-color: #74c0fc;
+  height: 6vh;
+  width: 3vw;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .side-bar {
-  /* background-color: deeppink; */
   width: 10%;
   display: flex;
   flex-direction: column;
