@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "work-sans-reg";
+  src: url("/static/WorkSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "work-sans-medium";
+  src: url("/static/WorkSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "work-sans-bold";
+  src: url("../static/WorkSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "work-sans-itac";
+  src: url("/static/WorkSans-BlackItalic.ttf") format("truetype");
+}
+
+body {
+  /* background-color: #474747; */
+  /* background-image: url("../image/grunge-rough-old-stained-polished-and-empty-smooth-concrete-or-stone-or-wall-texture-beige-grungy-background-of-natural-cement-or-stone-perfect-for-presentation-and-construction-and-design-free-photo.jpg"); */
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+  font-size: 16px;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  margin: 0 3%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffffe3;
+  margin: 5vh 0;
+}
+
+#settings-icon {
+  color: cornflowerblue;
+}
+
+#time-txt {
+  font-family: "work-sans-bold";
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#date-txt {
+  font-family: "work-sans-reg";
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  margin-top: 15vh;
+  gap: 5vw;
+  width: 100%;
+  background-color: brown;
+}
+
+.image-wrapper {
+  margin-left: 5vw;
+  /* background-color: chartreuse; */
+  width: auto;
+}
+
+.image-wrapper img {
+  height: 250px;
+  width: 280px;
+  mix-blend-mode: hard-light;
+}
+
+.name-wrapper {
+  background-color: rgb(255, 0, 179);
+  width: 75%;
+}
+
+.name-display {
+  font-family: "work-sans-medium";
+  font-size: 2.2rem;
+  color: #fff;
+  height: 7vh;
+  /* background-color: yellow; */
+}
+
+.name-typer {
+  font-family: "work-sans-bold";
+  font-size: 2.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  color: #fff;
+  border-right: 4px solid #fff;
+  animation: 7s linear 0s 1 normal forwards animate;
+  height: 10vh;
+  /* background-color: blue; */
+}
+
+@keyframes animate {
+  0% {
+    width: 0px;
+  }
+
+  10% {
+    width: 0px;
+  }
+
+  100% {
+    width: 0px;
+  }
+
+  70% {
+    width: 100%;
+  }
+
+  90% {
+    width: 100%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.typing-container {
+  display: inline-block;
+  border-right: 3px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "work-sans-medium";
+  font-size: 1.6rem;
+  color: #fff;
+  margin-top: 0.5vh;
+  height: 7vh;
+  /* background-color: red; */
+}
+
+.side-bar {
+  /* background-color: deeppink; */
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+.menu-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #989898;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+.menu-link:hover {
+  background-color: #74c0fc;
+}
+
+.active-menu {
+  background-color: #74c0fc;
+}
+
+.icon-text-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.text-hover {
+  position: absolute;
+  right: 170%;
+  top: 20%;
+  font-family: "work-sans-reg";
+  font-size: 1rem;
+  color: #fff;
+  white-space: nowrap;
+  display: none;
+}
