@@ -1,7 +1,6 @@
 const time = document.getElementById("time-txt");
 const date = document.getElementById("date-txt");
 const target = document.querySelector(".typing-container");
-const displaySideBarTxtControl = document.querySelectorAll(".menu-link");
 
 // FUNCTION TO DISPLAY TIME AND DATE
 const presentTime = () => {
@@ -64,16 +63,3 @@ function typeEffect() {
 setTimeout(() => {
   typeEffect();
 }, 4500); // delay in milliseconds
-
-// ------- MOUSE HOVER EFFECT -------- //
-displaySideBarTxtControl.forEach((menuLink) => {
-  const menuText = menuLink.querySelector(".text-hover");
-
-  menuLink.addEventListener("mouseenter", () => {
-    menuText.style.display = "block";
-  });
-
-  menuLink.addEventListener("mouseleave", () => {
-    menuText.style.display = "none";
-  });
-});

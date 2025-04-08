@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <nav>
+      <div class="left-side">
         <div id="settings-icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -23,14 +23,11 @@
             />
           </svg>
         </div>
-        <div>
-          <p id="time-txt"></p>
-          <p id="date-txt"></p>
-        </div>
-      </nav>
-      <main>
+      </div>
+      <main class="main-content">
         <div class="image-wrapper">
-          <img src="../image/front-end.png" alt="" />
+          <!-- <img src="../image/front-end.png" alt="" /> -->
+          <img src="../image/Coding-amico.png" alt="Animation GIF" />
         </div>
         <div class="name-wrapper">
           <p class="name-display">Hi i'm</p>
@@ -56,6 +53,12 @@
               </svg>
             </div>
           </button>
+        </div>
+      </main>
+      <div class="right-side">
+        <div class="date-time-wrapper">
+          <p id="time-txt"></p>
+          <p id="date-txt"></p>
         </div>
         <div class="side-bar">
           <a href="" class="menu-link active-menu">
@@ -123,7 +126,7 @@
             </div>
           </a>
         </div>
-      </main>
+      </div>
     </div>
     <script src="home.js" type="module"></script>
   </body>

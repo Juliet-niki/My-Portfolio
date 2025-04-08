@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "work-sans-reg";
+  src: url("/static/WorkSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "work-sans-medium";
+  src: url("/static/WorkSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "work-sans-bold";
+  src: url("../static/WorkSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "work-sans-itac";
+  src: url("/static/WorkSans-BlackItalic.ttf") format("truetype");
+}
+
+body {
+  /* background-image: url("../image/grunge-rough-old-stained-polished-and-empty-smooth-concrete-or-stone-or-wall-texture-beige-grungy-background-of-natural-cement-or-stone-perfect-for-presentation-and-construction-and-design-free-photo.jpg"); */
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+  font-size: 16px;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  margin: 4vh 3% 0 3%;
+  display: grid;
+  grid-template-columns: auto 81% 14%;
+  gap: 1%;
+  height: 100vh;
+}
+
+.left-side,
+.right-side {
+  overflow: hidden;
+}
+
+.left-side {
+  width: fit-content;
+}
+
+#settings-icon {
+  color: cornflowerblue;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5vh;
+  gap: 2vw;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.scroll-area {
+  overflow-y: scroll;
+  padding: 0 1vw;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  color: #fff;
+  padding-bottom: 10vh;
+}
+
+.scroll-area::-webkit-scrollbar {
+  display: none;
+}
+
+.img-about-me-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.about-me-text {
+  font-family: "work-sans-bold";
+  font-size: 4rem;
+}
+
+.image-wrapper {
+  width: auto;
+}
+
+.image-wrapper img {
+  width: 290px;
+}
+
+.img-about-me-wrapper p {
+  font-family: "work-sans-reg";
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 1.5;
+  margin-top: 2vh;
+}
+
+.my-skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin-top: 15vh;
+}
+
+.my-skills-wrapper h2 {
+  font-family: "work-sans-bold";
+  font-size: 4rem;
+  margin-bottom: 4vh;
+}
+
+.my-skills-wrapper h4 {
+  font-family: "work-sans-medium";
+  font-size: 2.5rem;
+  margin-bottom: 2vh;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.2vw;
+  margin-top: 2vh;
+}
+
+.skills-list img {
+  height: 45px;
+  width: 45px;
+}
+
+.skill-item {
+  position: relative;
+  border: 1.1px solid #fff;
+  z-index: 0;
+  border-radius: 12px;
+  padding: 1vh 1.2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2vw;
+  transition: transform 0.4s ease;
+  background-color: transparent;
+  width: 16vw;
+}
+
+.skill-item:hover {
+  transform: scale(1.05);
+}
+
+/* Gradient border animation */
+.skill-item::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(
+    270deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red
+  );
+  background-size: 400% 400%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  animation: borderAnim 6s linear infinite;
+
+  /* Only show the border area */
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+/* Show animated border only on hover */
+.skill-item:hover::before {
+  opacity: 1;
+}
+
+@keyframes borderAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 400% 50%;
+  }
+}
+
+.skill-item p {
+  font-family: "work-sans-reg";
+  font-size: 1.2rem;
+}
+
+.tools-method-skills {
+  margin-top: 8vh;
+}
+
+.github-logo {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.right-side {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10vh;
+  width: 100%;
+}
+
+#time-txt {
+  font-family: "work-sans-bold";
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#date-txt {
+  font-family: "work-sans-reg";
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.date-time-wrapper {
+  color: #fff;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+.menu-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #989898;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+.menu-link:hover {
+  background-color: #74c0fc;
+}
+
+.active-menu {
+  background-color: #74c0fc;
+}
+
+.icon-text-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.text-hover {
+  position: absolute;
+  right: 180%;
+  top: 20%;
+  font-family: "work-sans-reg";
+  font-size: 1rem;
+  color: #fff;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.menu-link:hover .text-hover {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
