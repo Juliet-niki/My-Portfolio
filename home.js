@@ -63,3 +63,46 @@ function typeEffect() {
 setTimeout(() => {
   typeEffect();
 }, 4500); // delay in milliseconds
+
+// // FUNCTION TO DISPLAY PROJECTS DESCRIPTION
+// const closeIocn = document.querySelectorAll(".close-icon");
+// const projectItem = document.querySelectorAll(".project-item");
+
+// projectItem.forEach((pItem) => {
+//   const projectDescription = pItem.querySelector(".project-descriptions");
+
+//   pItem.addEventListener("click", () => {
+//     projectDescription.style.display = "block";
+//   });
+// });
+
+// closeIocn.forEach((item) => {
+//   const projectAccess = item.querySelectorAll(".project-descriptions");
+
+//   item.addEventListener("click", () => {
+//     projectAccess.style.display = "none";
+//   });
+// });
+
+const closeIcons = document.querySelectorAll(".close-icon");
+const projectItems = document.querySelectorAll(".project-item");
+
+projectItems.forEach((item) => {
+  const description = item.querySelector(".project-descriptions");
+
+  item.addEventListener("click", () => {
+    description.style.display = "block";
+    document.body.classList.add("disable-interaction");
+  });
+});
+
+closeIcons.forEach((icon) => {
+  icon.addEventListener("click", (event) => {
+    event.stopPropagation();
+    const parentItem = icon.closest(".project-item");
+    const description = parentItem.querySelector(".project-descriptions");
+
+    description.style.display = "none";
+    document.body.classList.remove("disable-interaction");
+  });
+});
