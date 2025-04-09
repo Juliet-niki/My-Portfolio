@@ -166,10 +166,6 @@ ul {
   display: none;
 }
 
-.no-scroll .project-description-scroll-area {
-  /* overflow: scroll; */
-}
-
 .project-name-2 {
   font-family: "work-sans-bold";
   font-size: 1.7rem;

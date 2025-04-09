@@ -64,26 +64,7 @@ setTimeout(() => {
   typeEffect();
 }, 4500); // delay in milliseconds
 
-// // FUNCTION TO DISPLAY PROJECTS DESCRIPTION
-// const closeIocn = document.querySelectorAll(".close-icon");
-// const projectItem = document.querySelectorAll(".project-item");
-
-// projectItem.forEach((pItem) => {
-//   const projectDescription = pItem.querySelector(".project-descriptions");
-
-//   pItem.addEventListener("click", () => {
-//     projectDescription.style.display = "block";
-//   });
-// });
-
-// closeIocn.forEach((item) => {
-//   const projectAccess = item.querySelectorAll(".project-descriptions");
-
-//   item.addEventListener("click", () => {
-//     projectAccess.style.display = "none";
-//   });
-// });
-
+// // FUNCTION TO DISPLAY PROJECTS DESCRIPTION AND CLOSES IT
 const closeIcons = document.querySelectorAll(".close-icon");
 const projectItems = document.querySelectorAll(".project-item");
 
