@@ -31,7 +31,7 @@ const sentences = [
 let sentenceIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
-const speed = 80; // Typing speed (milliseconds per letter)
+const speed = 60; // Typing speed (milliseconds per letter)
 const eraseSpeed = 50; // Erasing speed
 const delayBetweenSentences = 1000; // Delay before erasing
 
@@ -62,7 +62,7 @@ function typeEffect() {
 // Start typing animation after a delay
 setTimeout(() => {
   typeEffect();
-}, 4500); // delay in milliseconds
+}, 7000); // delay in milliseconds
 
 // FUNCTION TO DISPLAY PROJECTS DESCRIPTION AND CLOSES IT
 const closeIcons = document.querySelectorAll(".close-icon");

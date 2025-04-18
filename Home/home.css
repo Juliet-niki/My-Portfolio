@@ -24,7 +24,6 @@
 }
 
 body {
-  /* background-image: url("../image/grunge-rough-old-stained-polished-and-empty-smooth-concrete-or-stone-or-wall-texture-beige-grungy-background-of-natural-cement-or-stone-perfect-for-presentation-and-construction-and-design-free-photo.jpg"); */
   background-image: url("../image/background.jpg");
   background-size: cover;
   font-size: 16px;
@@ -53,45 +52,48 @@ body {
 .main-content {
   display: flex;
   margin-top: 15vh;
-  gap: 5vw;
+  gap: 5%;
   width: fit-content;
 }
 
 .image-wrapper {
   margin-left: 1vw;
-  width: auto;
+  width: 22%;
 }
 
 .image-wrapper img {
-  width: 250px;
+  width: 200px;
 }
 
 .name-display {
   font-family: "work-sans-medium";
-  font-size: 2.2rem;
+  font-size: 1.7vw;
   color: #fff;
-  height: 7vh;
 }
 
 .name-typer {
   font-family: "work-sans-bold";
-  font-size: 2.9rem;
+  font-size: 3.6vw;
   white-space: nowrap;
   overflow: hidden;
   width: 0;
   color: #ff4d4d;
   border-right: 4px solid #fff;
   animation: animate 7s linear forwards;
-  height: 8vh;
 }
 
 @keyframes animate {
   0% {
     width: 0;
   }
-  70% {
-    width: 100%;
+  50% {
+    width: 50%;
   }
+
+  75% {
+    width: 75%;
+  }
+
   100% {
     width: 100%;
   }
@@ -107,7 +109,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   font-family: "work-sans-medium";
-  font-size: 1.6rem;
+  font-size: 1.9vw;
   color: #fff;
   margin-top: 0.5vh;
 }
@@ -116,38 +118,38 @@ body {
   height: 1vh;
 }
 
-.resume-btn-wrapper {
-  text-decoration: none;
-}
-
 .resume-btn {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 1.1vw;
   color: #fff;
   font-family: "work-sans-medium";
-  font-size: 1rem;
   border: 2px solid #fff;
   border-radius: 11px;
   width: fit-content;
-  padding: 1vh 0.5vw 1vh 1vw;
+  padding: 1vh 1vw 1vh 1vw;
   margin: 3vh 0 0 50%;
   transform: translateX(-50%);
   background: none;
-  transition: ease-in-out 0.8s;
+  transition: ease-in-out 0.9s;
+}
+
+.resume-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4vw;
 }
 
 .resume-btn:hover {
   background-color: #74c0fc;
   cursor: pointer;
-  font-size: 1.1rem;
 }
 
 .download-icon {
   background-color: #74c0fc;
-  height: 6vh;
-  width: 3vw;
+  width: 45px;
+  height: 45px;
+  padding: 0.3vh 0.7vw;
   border-radius: 11px;
   display: flex;
   align-items: center;
@@ -165,16 +167,114 @@ body {
 
 #time-txt {
   font-family: "work-sans-bold";
-  font-size: 1.5rem;
+  font-size: 1.8vw;
   font-weight: 500;
 }
 
 #date-txt {
   font-family: "work-sans-reg";
-  font-size: 1rem;
+  font-size: 1vw;
   font-weight: 500;
 }
 
 .date-time-wrapper {
   color: #fff;
+  text-align: right;
+}
+
+@media only screen and (max-width: 1312px) {
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1100px) {
+  .main-content {
+    display: block;
+    margin-top: 8vh;
+    align-items: center;
+    width: 100%;
+  }
+
+  .image-wrapper {
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .name-wrapper {
+    width: 100%;
+  }
+
+  .name-display {
+    font-size: 2vw;
+  }
+
+  .name-typer {
+    font-size: 4.95vw;
+  }
+
+  .typing-container {
+    font-size: 2.3vw;
+  }
+
+  .resume-btn a {
+    font-size: 1.6vw;
+  }
+
+  .download-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  #time-txt {
+    font-size: 2.1vw;
+  }
+
+  #date-txt {
+    font-size: 1.3vw;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .name-typer {
+    border-right: 3px solid #fff;
+  }
+
+  .resume-btn a {
+    font-size: 2.1vw;
+  }
+
+  .download-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .download-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .image-wrapper img {
+    width: 170px;
+  }
+
+  #time-txt {
+    font-size: 2.5vw;
+  }
+
+  #date-txt {
+    font-size: 1.6vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .name-typer {
+    border-right: 2px solid #fff;
+  }
 }

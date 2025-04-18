@@ -40,6 +40,7 @@ template.innerHTML = `
   align-items: flex-end;
   gap: 2vh;
   width: 100%;
+  
 }
 
 .menu-link {
@@ -70,7 +71,7 @@ template.innerHTML = `
   right: 180%;
   top: 20%;
   font-family: "work-sans-reg";
-  font-size: 1rem;
+  font-size: 1.3vw;
   color: #fff;
   white-space: nowrap;
   opacity: 0;
@@ -82,6 +83,57 @@ template.innerHTML = `
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+@media only screen and (max-width: 1100px){
+.menu-link {
+  height: 55px;
+  width: 55px;
+}
+
+.menu-link svg{
+  height: 30px;
+  width: 30px;
+}
+
+.text-hover {
+  font-size: 1.5vw;
+  right: 175%;
+
+}
+
+}
+
+@media only screen and (max-width: 768px){
+.menu-link {
+  height: 45px;
+  width: 45px;
+}
+
+.menu-link svg{
+  height: 27px;
+  width: 27px;
+}
+
+.text-hover {
+  font-size: 1.9vw;
+  right: 170%;
+
+}
+
+}
+
+@media only screen and (max-width: 600px){
+.menu-link {
+  height: 40px;
+  width: 40px;
+}
+
+.menu-link svg{
+  height: 25px;
+  width: 25px;
+}
+
 }
 
 </style>
