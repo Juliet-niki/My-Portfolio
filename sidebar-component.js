@@ -108,8 +108,8 @@ template.innerHTML = `
 
 @media only screen and (max-width: 768px){
 .menu-link {
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
 }
 
 .menu-link svg{
@@ -127,13 +127,13 @@ template.innerHTML = `
 
 @media only screen and (max-width: 600px){
 .menu-link {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 
 .menu-link svg{
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
 }
 
 }

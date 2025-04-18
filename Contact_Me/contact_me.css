@@ -83,13 +83,13 @@ ul {
 
 .about-me-text {
   font-family: "work-sans-bold";
-  font-size: 4rem;
+  font-size: 4vw;
   text-align: center;
 }
 
 .Preview-txt {
   font-family: "work-sans-reg";
-  font-size: 1.2rem;
+  font-size: 1.5vw;
   margin-top: 2vh;
   width: 80%;
   text-align: justify;
@@ -123,7 +123,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 0.7vw;
-  font-size: 1.6rem;
+  font-size: 1.7vw;
   margin-bottom: 1vh;
   font-family: "work-sans-medium";
   font-weight: 700;
@@ -132,7 +132,7 @@ ul {
 .contact a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1.2vw;
   font-family: "work-sans-reg";
   width: fit-content;
 }
@@ -168,7 +168,7 @@ ul {
 
 .location {
   font-family: "work-sans-reg";
-  font-size: 1.2rem;
+  font-size: 1.3vw;
   text-align: justify;
   margin: 5vh 0 0 7vw;
   display: flex;
@@ -200,4 +200,97 @@ ul {
 .date-time-wrapper {
   color: #fff;
   text-align: right;
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1100px) {
+  .main-content {
+    margin-top: 8vh;
+    align-items: center;
+    width: 100%;
+  }
+
+  .about-me-text {
+    font-size: 4.4vw;
+  }
+
+  .Preview-txt {
+    font-size: 1.8vw;
+  }
+
+  #time-txt {
+    font-size: 2.1vw;
+  }
+
+  #date-txt {
+    font-size: 1.3vw;
+  }
+
+  .contact {
+    width: 22vw;
+  }
+
+  .icon-text {
+    font-size: 2vw;
+  }
+
+  .contact a {
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+  #time-txt {
+    font-size: 2.5vw;
+  }
+
+  #date-txt {
+    font-size: 1.6vw;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 4vh;
+    margin-top: 5vh;
+  }
+
+  .contact {
+    width: 28vw;
+    padding: 1vh 0 1.1vh 2vw;
+  }
+
+  .icon-text {
+    font-size: 2.5vw;
+  }
+
+  .icon-text svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact a {
+    font-size: 1.8vw;
+  }
+
+  .location {
+    font-size: 2vw;
+  }
+
+  .socials {
+    margin-top: 10vh;
+  }
+
+  .socials svg,
+  .location svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
 }
