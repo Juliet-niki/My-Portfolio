@@ -71,7 +71,7 @@ template.innerHTML = `
   right: 180%;
   top: 20%;
   font-family: "work-sans-reg";
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   color: #fff;
   white-space: nowrap;
   opacity: 0;
@@ -97,7 +97,7 @@ template.innerHTML = `
 }
 
 .text-hover {
-  font-size: 1.5vw;
+  // font-size: 1.4vw;
   right: 175%;
 
 }
@@ -116,7 +116,7 @@ template.innerHTML = `
 }
 
 .text-hover {
-  font-size: 1.9vw;
+  // font-size: 1.9vw;
   right: 170%;
 
 }

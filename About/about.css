@@ -89,7 +89,7 @@ ul {
 
 .about-me-text {
   font-family: "work-sans-bold";
-  font-size: 4rem;
+  font-size: 4vw;
 }
 
 .image-wrapper {
@@ -98,7 +98,7 @@ ul {
 }
 
 .image-wrapper img {
-  width: 270px;
+  width: 240px;
   animation: floatUpDown 7s ease-in infinite;
 }
 
@@ -122,7 +122,7 @@ ul {
 
 .img-about-me-wrapper p {
   font-family: "work-sans-reg";
-  font-size: 1.2rem;
+  font-size: 1.3vw;
   text-align: justify;
   line-height: 1.5;
   margin-top: 2vh;
@@ -134,18 +134,18 @@ ul {
   flex-direction: column;
   align-items: center;
   color: #fff;
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 
 .my-skills-wrapper h2 {
   font-family: "work-sans-bold";
-  font-size: 4rem;
-  margin-bottom: 4vh;
+  font-size: 4vw;
+  margin-bottom: 2.5vh;
 }
 
 .my-skills-wrapper h4 {
   font-family: "work-sans-medium";
-  font-size: 2.5rem;
+  font-size: 2.5vw;
   margin-bottom: 2vh;
 }
 
@@ -177,7 +177,7 @@ ul {
   gap: 2vw;
   transition: transform 0.4s ease;
   background-color: transparent;
-  width: 16vw;
+  width: 17vw;
 }
 
 .skill-item:hover {
@@ -231,7 +231,7 @@ ul {
 
 .skill-item p {
   font-family: "work-sans-reg";
-  font-size: 1.2rem;
+  font-size: 1.4vw;
 }
 
 .tools-method-skills {
@@ -269,25 +269,43 @@ ul {
   text-align: right;
 }
 
-@media only screen and (max-width: 1312px) {
-}
-
 @media only screen and (max-width: 1200px) {
+  .image-wrapper img {
+    width: 200px;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
   .main-content {
-    display: block;
     margin-top: 8vh;
     align-items: center;
     width: 100%;
   }
 
-  .image-wrapper {
-    margin-bottom: 10vh;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  .about-me-text,
+  .my-skills-wrapper h2 {
+    font-size: 4.1vw;
+  }
+
+  .img-about-me-wrapper p {
+    font-size: 1.4vw;
+  }
+
+  .image-wrapper img {
+    width: 170px;
+  }
+
+  .skill-item {
+    width: 18vw;
+  }
+
+  .skills-list img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .java img {
+    width: 45px;
   }
 
   #time-txt {
@@ -300,11 +318,46 @@ ul {
 }
 
 @media only screen and (max-width: 992px) {
+  .image-wrapper img {
+    width: 150px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .image-wrapper img {
-    width: 170px;
+    width: 110px;
+  }
+
+  .about-me-text,
+  .my-skills-wrapper h2 {
+    font-size: 4.2vw;
+  }
+
+  .img-about-me-wrapper p {
+    font-size: 1.6vw;
+  }
+
+  .skill-item {
+    width: 24vw;
+  }
+
+  .skill-item p {
+    font-size: 1.8vw;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.8vw;
+    margin-top: 2vh;
+  }
+
+  .skills-list img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .java img {
+    width: 40px;
   }
 
   #time-txt {
@@ -317,4 +370,12 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
+  .skills-list img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .java img {
+    width: 35px;
+  }
 }
