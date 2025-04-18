@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "work-sans-reg";
+  src: url("../static/WorkSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "work-sans-medium";
+  src: url("../static/WorkSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "work-sans-bold";
+  src: url("../static/WorkSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "work-sans-itac";
+  src: url("../static/WorkSans-BlackItalic.ttf") format("truetype");
+}
+
+body {
+  /* background-image: url("../image/grunge-rough-old-stained-polished-and-empty-smooth-concrete-or-stone-or-wall-texture-beige-grungy-background-of-natural-cement-or-stone-perfect-for-presentation-and-construction-and-design-free-photo.jpg"); */
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+  font-size: 16px;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  margin: 4vh 3% 0 3%;
+  display: grid;
+  grid-template-columns: auto 77% 14%;
+  gap: 1%;
+  height: 100vh;
+  position: relative;
+}
+
+.left-side,
+.right-side {
+  overflow: hidden;
+}
+
+.left-side {
+  width: fit-content;
+}
+
+.left-side img {
+  width: 100%;
+  border-radius: 11px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.scroll-area {
+  overflow-y: scroll;
+  padding: 0 1vw;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  color: #fff;
+  padding-bottom: 10vh;
+}
+
+.scroll-area::-webkit-scrollbar {
+  display: none;
+}
+
+.about-me-text {
+  font-family: "work-sans-bold";
+  font-size: 4rem;
+  text-align: center;
+}
+
+.Preview-txt {
+  font-family: "work-sans-reg";
+  font-size: 1.2rem;
+  margin-top: 2vh;
+  width: 80%;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6vh;
+  margin-top: 15vh;
+}
+
+.contact {
+  width: 17vw;
+  background-color: #2838589c;
+  border-radius: 9px;
+  padding: 2vh 1.1vw;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact:hover {
+  transform: scale(1.02);
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 0.7vw;
+  font-size: 1.6rem;
+  margin-bottom: 1vh;
+  font-family: "work-sans-medium";
+  font-weight: 700;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: "work-sans-reg";
+  width: fit-content;
+}
+
+.contact a:hover {
+  color: lightskyblue;
+}
+
+.socials {
+  margin-top: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6vh;
+}
+
+.social {
+  transition: all 0.3s ease-in-out;
+}
+
+.social:hover {
+  transform: scale(1.1);
+}
+
+.social svg path {
+  fill: #74c0fc;
+  transition: fill 0.3s ease;
+}
+
+.social a:hover svg path {
+  fill: rgb(255, 48, 48);
+}
+
+.location {
+  font-family: "work-sans-reg";
+  font-size: 1.2rem;
+  text-align: justify;
+  margin: 5vh 0 0 7vw;
+  display: flex;
+  align-items: flex-end;
+  gap: 1vw;
+}
+
+.right-side {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10vh;
+  width: 100%;
+}
+
+#time-txt {
+  font-family: "work-sans-bold";
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#date-txt {
+  font-family: "work-sans-reg";
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.date-time-wrapper {
+  color: #fff;
+}

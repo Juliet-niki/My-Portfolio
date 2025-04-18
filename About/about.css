@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: "work-sans-reg";
-  src: url("/static/WorkSans-Regular.ttf") format("truetype");
+  src: url("../static/WorkSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "work-sans-medium";
-  src: url("/static/WorkSans-Medium.ttf") format("truetype");
+  src: url("../static/WorkSans-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "work-sans-bold";
@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: "work-sans-itac";
-  src: url("/static/WorkSans-BlackItalic.ttf") format("truetype");
+  src: url("../static/WorkSans-BlackItalic.ttf") format("truetype");
 }
 
 body {
@@ -40,7 +40,7 @@ ul {
 .container {
   margin: 4vh 3% 0 3%;
   display: grid;
-  grid-template-columns: auto 81% 14%;
+  grid-template-columns: auto 77% 14%;
   gap: 1%;
   height: 100vh;
 }
@@ -54,8 +54,9 @@ ul {
   width: fit-content;
 }
 
-#settings-icon {
-  color: cornflowerblue;
+.left-side img {
+  width: 100%;
+  border-radius: 11px;
 }
 
 .main-content {
@@ -83,7 +84,7 @@ ul {
 
 .img-about-me-wrapper {
   display: flex;
-  align-items: center;
+  gap: 2%;
 }
 
 .about-me-text {
@@ -93,10 +94,30 @@ ul {
 
 .image-wrapper {
   width: auto;
+  margin-top: 3vh;
 }
 
 .image-wrapper img {
-  width: 290px;
+  width: 270px;
+  animation: floatUpDown 7s ease-in infinite;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, -20px); /* top-right */
+  }
+  50% {
+    transform: translate(0, -35px); /* top-center */
+  }
+  75% {
+    transform: translate(-20px, -20px); /* top-left */
+  }
+  100% {
+    transform: translate(0, 0); /* back to original */
+  }
 }
 
 .img-about-me-wrapper p {
@@ -105,6 +126,7 @@ ul {
   text-align: justify;
   line-height: 1.5;
   margin-top: 2vh;
+  width: 80%;
 }
 
 .my-skills-wrapper {
@@ -129,7 +151,7 @@ ul {
 
 .skills-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.2vw;
   margin-top: 2vh;
 }
@@ -137,6 +159,10 @@ ul {
 .skills-list img {
   height: 45px;
   width: 45px;
+}
+
+.java img {
+  width: 50px;
 }
 
 .skill-item {
@@ -240,54 +266,4 @@ ul {
 
 .date-time-wrapper {
   color: #fff;
-}
-
-.side-bar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2vh;
-}
-
-.menu-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #989898;
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-}
-
-.menu-link:hover {
-  background-color: #74c0fc;
-}
-
-.active-menu {
-  background-color: #74c0fc;
-}
-
-.icon-text-wrapper {
-  display: flex;
-  position: relative;
-}
-
-.text-hover {
-  position: absolute;
-  right: 180%;
-  top: 20%;
-  font-family: "work-sans-reg";
-  font-size: 1rem;
-  color: #fff;
-  white-space: nowrap;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
-}
-
-.menu-link:hover .text-hover {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
 }
