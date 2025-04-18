@@ -143,7 +143,7 @@ template.innerHTML = `
  <!-- -------- HTML FOR SIDEBAR  ------- -->
   
 <div class="side-bar">
-          <a href="../Home/home.html" class="menu-link active-menu" id="home">
+          <a href="../index.html" class="menu-link active-menu" id="home">
             <div class="icon-text-wrapper">
               <p class="text-hover">Home</p>
               <svg
