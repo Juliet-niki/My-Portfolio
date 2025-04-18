@@ -40,6 +40,7 @@ template.innerHTML = `
   align-items: flex-end;
   gap: 2vh;
   width: 100%;
+   z-index:1;
   
 }
 
@@ -77,6 +78,7 @@ template.innerHTML = `
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
+  z-index: 2;
 }
 
 .menu-link:hover .text-hover {

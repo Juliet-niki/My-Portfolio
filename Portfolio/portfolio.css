@@ -81,7 +81,7 @@ ul {
 
 .Preview-txt {
   font-family: "work-sans-reg";
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   margin-top: 2vh;
 }
 
@@ -101,8 +101,8 @@ ul {
 .projects {
   display: grid;
   grid-template-columns: 45% 45%;
-  gap: 8vh 10%;
-  margin-top: 10vh;
+  gap: 5% 10%;
+  margin-top: 6vh;
 }
 
 .project-item {
@@ -125,13 +125,13 @@ ul {
 
 .project-name-1 {
   font-family: "work-sans-medium";
-  font-size: 1.2rem;
+  font-size: 1.4vw;
   margin-top: 0.9vh;
 }
 
 .project-description-1 {
   font-family: "work-sans-reg";
-  font-size: 1rem;
+  font-size: 1.1vw;
   margin-top: 0.4vh;
   color: #989898;
 }
@@ -140,12 +140,15 @@ ul {
   text-decoration: none;
   color: lightskyblue;
   font-family: "work-sans-reg";
-  font-size: 0.8rem;
+  font-size: 0.9vw;
 }
 
 .close-icon {
-  margin: 1vh 0 0 96%;
   cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5vh;
 }
 
 .project-descriptions {
@@ -178,14 +181,14 @@ ul {
 
 .project-name-2 {
   font-family: "work-sans-bold";
-  font-size: 1.7rem;
+  font-size: 2vw;
   margin-top: 0.9vh;
   color: #3b2ef7;
 }
 
 .project-description-2 {
   font-family: "work-sans-reg";
-  font-size: 1rem;
+  font-size: 1.3vw;
   margin-top: 0.4vh;
   color: #686868;
   line-height: 4vh;
@@ -196,7 +199,7 @@ ul {
 
 .project-link-box {
   font-family: "work-sans-reg";
-  font-size: 1.2rem;
+  font-size: 1.4vw;
   margin-top: 5vh;
   color: #000;
 }
@@ -205,13 +208,13 @@ ul {
   text-decoration: none;
   color: #3b2ef7;
   font-family: "work-sans-reg";
-  font-size: 1rem;
+  font-size: 1.2vw;
   margin-left: 1.5vw;
 }
 
 .technologies {
   font-family: "work-sans-reg";
-  font-size: 1.2rem;
+  font-size: 1.4vw;
   margin-top: 0.4vh;
   color: #686868;
 }
@@ -264,15 +267,50 @@ ul {
   }
 
   .about-me-text {
-    font-size: 4.1vw;
+    font-size: 4.4vw;
+  }
+
+  .Preview-txt {
+    font-size: 2vw;
   }
 
   #time-txt {
     font-size: 2.1vw;
   }
 
-  #date-txt {
+  #date-txt,
+  .project-description-1 {
     font-size: 1.3vw;
+  }
+
+  .project-name-1 {
+    font-size: 1.8vw;
+  }
+
+  .project-link-1 {
+    font-size: 1.2vw;
+  }
+
+  .project-name-2 {
+    font-size: 2.4vw;
+  }
+
+  .project-description-2 {
+    font-size: 1.5vw;
+  }
+
+  .project-link-box,
+  .technologies {
+    font-size: 1.7vw;
+  }
+
+  .project-link-2 {
+    font-size: 1.4vw;
+  }
+
+  .close-icon svg {
+    height: 20px;
+    width: 20px;
   }
 }
 
@@ -287,7 +325,55 @@ ul {
   #date-txt {
     font-size: 1.6vw;
   }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .project-name-1 {
+    font-size: 2.1vw;
+  }
+
+  .project-description-1 {
+    font-size: 1.8vw;
+  }
+
+  .project-link-1 {
+    font-size: 1.6vw;
+  }
+
+  .project-descriptions {
+    width: 55vw;
+    height: 55vh;
+  }
+
+  .project-name-2 {
+    font-size: 2.6vw;
+  }
+
+  .project-description-2 {
+    font-size: 1.7vw;
+  }
+
+  .project-link-box,
+  .technologies {
+    font-size: 1.9vw;
+  }
+
+  .project-link-2 {
+    font-size: 1.6vw;
+  }
+
+  .close-icon svg {
+    height: 17px;
+    width: 17px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .project-descriptions {
+    height: 50vh;
+  }
 }
