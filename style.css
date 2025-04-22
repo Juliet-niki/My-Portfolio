@@ -29,11 +29,17 @@ body {
 }
 
 .container {
-  margin: 4vh 3% 0 3%;
+  padding-top: 3%;
   display: grid;
-  grid-template-columns: auto 77% 14%;
+  grid-template-rows: 90% 10%;
+  height: 100%;
+}
+
+.top-container {
+  display: grid;
+  grid-template-columns: 7% 77% 14%;
   gap: 1%;
-  height: 86vh;
+  margin: 0 3%;
 }
 
 .left-side {
@@ -49,7 +55,6 @@ body {
   display: flex;
   margin-top: 15vh;
   gap: 5%;
-  width: fit-content;
 }
 
 .image-wrapper {
@@ -123,7 +128,7 @@ body {
   border-radius: 50px;
   width: 16vw;
   padding-left: 1vw;
-  margin: 3vh 0 0 50%;
+  margin: 4vh 0 0 50%;
   transform: translateX(-50%);
   background: none;
   transition: ease-in-out 0.9s;
@@ -179,6 +184,14 @@ body {
 .date-time-wrapper {
   color: #fff;
   text-align: right;
+}
+
+footer {
+  grid-column: 1/ -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: auto;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -251,6 +264,7 @@ body {
 
   .resume-btn {
     width: 25vw;
+    margin-top: 2vh;
   }
 
   .download-icon {
@@ -281,12 +295,12 @@ body {
   }
 
   .resume-btn {
-    width: 25vw;
+    width: 28vw;
   }
 
   .download-icon {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
   }
 

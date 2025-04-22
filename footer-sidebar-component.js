@@ -31,13 +31,16 @@ template.innerHTML = `
 .side-bar {
   display: flex;
   justify-content: space-between;
-  padding: 2vh 20vw ;
+  align-items: center;
+  padding: 1.3vh 20vw;
   gap: 5vh;
-  width: 100%;
-  height: auto;
-z-index:1;
+  z-index:1;
   background-color: #323f58;
   visibility: hidden;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .menu-link {
@@ -48,6 +51,11 @@ z-index:1;
   border-radius: 50%;
   height: 40px;
   width: 40px;
+}
+
+.menu-link svg{
+  height: 25px;
+  width: 25px;
 }
 
 .menu-link:hover {
@@ -65,7 +73,7 @@ z-index:1;
 
 .text-hover {
   position: absolute;
- left: 160%;
+  left: 160%;
   top: 20%;
   font-family: "work-sans-reg";
   font-size: 1.7vw;
@@ -91,7 +99,15 @@ z-index:1;
 }
 
 @media only screen and (max-width: 600px){
+.menu-link {
+  height: 35px;
+  width: 35px;
+}
 
+.menu-link svg{
+  height: 18px;
+  width: 18px;
+}
 }
 
 </style>
@@ -105,8 +121,7 @@ z-index:1;
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 576 512"
-                width="25"
-                height="25"
+               
               >
                 <path
                   fill="#ffffff"
@@ -121,8 +136,7 @@ z-index:1;
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
-                 width="25"
-                height="25"
+                
               >
                 <path
                   fill="#ffffff"
@@ -137,8 +151,7 @@ z-index:1;
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                width="25"
-                height="25"
+                
               >
                 <path
                   fill="#ffffff"
@@ -153,8 +166,7 @@ z-index:1;
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                width="25"
-                height="25"
+               
               >
                 <path
                   fill="#ffffff"
