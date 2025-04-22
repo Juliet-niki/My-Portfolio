@@ -37,7 +37,7 @@ body {
   display: grid;
   grid-template-columns: auto 77% 14%;
   gap: 1%;
-  height: 100vh;
+  height: 86vh;
 }
 
 .left-side {
@@ -182,12 +182,6 @@ body {
   text-align: right;
 }
 
-@media only screen and (max-width: 1312px) {
-}
-
-@media only screen and (max-width: 1200px) {
-}
-
 @media only screen and (max-width: 1100px) {
   .main-content {
     display: block;
@@ -212,7 +206,7 @@ body {
   }
 
   .name-typer {
-    font-size: 4.95vw;
+    font-size: 5vw;
   }
 
   .typing-container {
@@ -233,7 +227,7 @@ body {
   }
 
   #date-txt {
-    font-size: 1.3vw;
+    font-size: 1.4vw;
   }
 }
 
@@ -269,7 +263,7 @@ body {
   }
 
   #date-txt {
-    font-size: 1.6vw;
+    font-size: 1.5vw;
   }
 }
 

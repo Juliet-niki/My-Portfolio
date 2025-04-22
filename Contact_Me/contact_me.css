@@ -42,7 +42,7 @@ ul {
   display: grid;
   grid-template-columns: auto 77% 14%;
   gap: 1%;
-  height: 88vh;
+  height: 86vh;
   position: relative;
 }
 
@@ -53,7 +53,6 @@ ul {
 
 .left-side {
   width: fit-content;
-  background-color: aqua;
 }
 
 .left-side img {
@@ -68,7 +67,6 @@ ul {
   overflow: hidden;
   z-index: 0;
   margin-top: 5vh;
-  background-color: chartreuse;
 }
 
 .scroll-area {
@@ -187,7 +185,6 @@ header {
   align-items: flex-end;
   gap: 10vh;
   width: 100%;
-  background-color: darkgoldenrod;
 }
 
 #time-txt {
@@ -205,9 +202,6 @@ header {
 .date-time-wrapper {
   color: #fff;
   text-align: right;
-}
-
-@media only screen and (max-width: 1200px) {
 }
 
 @media only screen and (max-width: 1100px) {
@@ -229,7 +223,7 @@ header {
   }
 
   #date-txt {
-    font-size: 1.3vw;
+    font-size: 1.4vw;
   }
 
   .contact {
@@ -254,13 +248,13 @@ header {
   }
 
   #date-txt {
-    font-size: 1.6vw;
+    font-size: 1.5vw;
   }
 
   .contact-info {
     flex-direction: column;
-    gap: 2vh;
-    margin-top: 5vh;
+    gap: 3vh;
+    margin-top: 8vh;
   }
 
   .contact {

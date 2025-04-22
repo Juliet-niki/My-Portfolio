@@ -36,12 +36,13 @@ template.innerHTML = `
 .side-bar {
   display: flex;
   justify-content: space-between;
-  padding: 1vh 5vw;
+  padding: 2vh 20vw ;
   gap: 5vh;
   width: 100%;
-  height: 12%vh;
+  height: auto;
 z-index:1;
-  background-color: red;
+  background-color: #323f58;
+  visibility: hidden;
 }
 
 .menu-link {
@@ -50,16 +51,16 @@ z-index:1;
   justify-content: center;
   background-color: #989898;
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
 }
 
 .menu-link:hover {
-  background-color: #74c0fc;
+  background-color:#1f9af8;
 }
 
 .active-menu {
-  background-color: #74c0fc;
+  background-color: #1f9af8;
 }
 
 .icon-text-wrapper {
@@ -69,10 +70,10 @@ z-index:1;
 
 .text-hover {
   position: absolute;
-  right: 180%;
+ left: 160%;
   top: 20%;
   font-family: "work-sans-reg";
-  font-size: 1.2vw;
+  font-size: 1.7vw;
   color: #fff;
   white-space: nowrap;
   opacity: 0;
@@ -87,54 +88,14 @@ z-index:1;
   pointer-events: auto;
 }
 
-@media only screen and (max-width: 1100px){
-.menu-link {
-  height: 55px;
-  width: 55px;
-}
-
-.menu-link svg{
-  height: 30px;
-  width: 30px;
-}
-
-.text-hover {
-  // font-size: 1.4vw;
-  right: 175%;
-
-}
-
-}
-
 @media only screen and (max-width: 768px){
-.menu-link {
-  height: 40px;
-  width: 40px;
-}
-
-.menu-link svg{
-  height: 27px;
-  width: 27px;
-}
-
-.text-hover {
-  // font-size: 1.9vw;
-  right: 170%;
-
+.side-bar {
+ visibility: visible;
 }
 
 }
 
 @media only screen and (max-width: 600px){
-.menu-link {
-  height: 30px;
-  width: 30px;
-}
-
-.menu-link svg{
-  height: 20px;
-  width: 20px;
-}
 
 }
 
@@ -149,8 +110,8 @@ z-index:1;
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 576 512"
-                width="30"
-                height="30"
+                width="25"
+                height="25"
               >
                 <path
                   fill="#ffffff"
@@ -165,8 +126,8 @@ z-index:1;
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
-                width="30"
-                height="30"
+                 width="25"
+                height="25"
               >
                 <path
                   fill="#ffffff"
@@ -181,8 +142,8 @@ z-index:1;
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                width="30"
-                height="30"
+                width="25"
+                height="25"
               >
                 <path
                   fill="#ffffff"
@@ -197,8 +158,8 @@ z-index:1;
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                width="30"
-                height="30"
+                width="25"
+                height="25"
               >
                 <path
                   fill="#ffffff"

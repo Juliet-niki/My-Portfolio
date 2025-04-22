@@ -89,8 +89,8 @@ template.innerHTML = `
 
 @media only screen and (max-width: 1100px){
 .menu-link {
-  height: 55px;
-  width: 55px;
+  height: 52px;
+  width: 52px;
 }
 
 .menu-link svg{
@@ -99,7 +99,6 @@ template.innerHTML = `
 }
 
 .text-hover {
-  // font-size: 1.4vw;
   right: 175%;
 
 }
@@ -107,21 +106,8 @@ template.innerHTML = `
 }
 
 @media only screen and (max-width: 768px){
-.menu-link {
-  height: 40px;
-  width: 40px;
-}
-
-.menu-link svg{
-  height: 27px;
-  width: 27px;
-}
-
-.text-hover {
-  // font-size: 1.9vw;
-  right: 170%;
-
-}
+.side-bar{
+display: none;}
 
 }
 

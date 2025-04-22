@@ -42,7 +42,7 @@ ul {
   display: grid;
   grid-template-columns: auto 77% 14%;
   gap: 1%;
-  height: 100vh;
+  height: 86vh;
 }
 
 .left-side,
@@ -242,9 +242,6 @@ ul {
   text-align: right;
 }
 
-@media only screen and (max-width: 1200px) {
-}
-
 @media only screen and (max-width: 1100px) {
   .main-content {
     align-items: center;
@@ -286,7 +283,7 @@ ul {
   }
 
   #date-txt {
-    font-size: 1.3vw;
+    font-size: 1.4vw;
   }
 }
 
@@ -339,14 +336,13 @@ ul {
   }
 
   #date-txt {
-    font-size: 1.6vw;
+    font-size: 1.5vw;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .scroll-area {
     padding-bottom: 15vh;
-    background-color: blue;
   }
 
   .skills-list img {
