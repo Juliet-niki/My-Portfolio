@@ -6,26 +6,21 @@
 
 @font-face {
   font-family: "work-sans-reg";
-  src: url("../static/WorkSans-Regular.ttf") format("truetype");
+  src: url("/static/WorkSans-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "work-sans-medium";
-  src: url("../static/WorkSans-Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "work-sans-bold";
-  src: url("../static/WorkSans-Bold.ttf") format("truetype");
+  src: url("/static/WorkSans-Medium.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "work-sans-itac";
-  src: url("../static/WorkSans-BlackItalic.ttf") format("truetype");
+  font-family: "work-sans-bold";
+  src: url("/static/WorkSans-Bold.woff2") format("woff2");
 }
 
 body {
-  /* background-image: url("../image/grunge-rough-old-stained-polished-and-empty-smooth-concrete-or-stone-or-wall-texture-beige-grungy-background-of-natural-cement-or-stone-perfect-for-presentation-and-construction-and-design-free-photo.jpg"); */
-  background-image: url("../image/background.jpg");
+  background-image: url("/image/background.jpg");
   background-size: cover;
   font-size: 16px;
   height: 100vh;
@@ -227,13 +222,13 @@ ul {
 
 #time-txt {
   font-family: "work-sans-bold";
-  font-size: 1.5rem;
+  font-size: 2vw;
   font-weight: 500;
 }
 
 #date-txt {
   font-family: "work-sans-reg";
-  font-size: 1rem;
+  font-size: 1.2vw;
   font-weight: 500;
 }
 

@@ -14,21 +14,16 @@ template.innerHTML = `
 
 @font-face {
   font-family: "work-sans-reg";
-  src: url("../static/WorkSans-Regular.ttf") format("truetype");
+  src: url("/static/WorkSans-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "work-sans-medium";
-  src: url("../static/WorkSans-Medium.ttf") format("truetype");
+  src: url("/static/WorkSans-Medium.woff2") format("woff2");
 }
 @font-face {
   font-family: "work-sans-bold";
-  src: url("../static/WorkSans-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "work-sans-itac";
-  src: url("../static/WorkSans-BlackItalic.ttf") format("truetype");
+  src: url("/static/WorkSans-Bold.woff2") format("woff2");
 }
 
 /*-------- CSS FOR SIDEBAR  -------*/

@@ -3,14 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="../image/CODE LOGO.png" />
+    <link rel="icon" type="image/png" href="/image/CODE LOGO.png" />
     <link rel="stylesheet" href="portfolio.css" />
+    <link
+      rel="preload"
+      href="/static/WorkSans-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/static/WorkSans-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/static/WorkSans-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
     <title>Portfolio</title>
   </head>
   <body>
     <div class="container">
       <div class="left-side">
-        <img src="../image/CODE LOGO.png" alt="my logo" />
+        <img src="/image/CODE LOGO.png" alt="my logo" />
       </div>
 
       <main class="main-content">
@@ -24,7 +46,7 @@
           <div class="projects">
             <div class="project-item">
               <div class="project-item-grp-1">
-                <img class="image-1" src="../image/shareAm2.png" alt="" />
+                <img class="image-1" src="/image/shareAm2.png" alt="" />
                 <p class="project-name-1">ShareAm</p>
                 <p class="project-description-1">
                   A screen sharing app for effective coloboration.
@@ -55,14 +77,14 @@
                   Technologies: <span>Electron, HTML, CSS, JavaScript. </span>
                 </p>
                 <div class="image-wrapper">
-                  <img class="image-2" src="../image/shareAm1.jpg" alt="" />
-                  <img class="image-2" src="../image/shareAm2.png" alt="" />
+                  <img class="image-2" src="/image/shareAm1.jpg" alt="" />
+                  <img class="image-2" src="/image/shareAm2.png" alt="" />
                 </div>
               </div>
             </div>
             <div class="project-item">
               <div class="project-item-grp-1">
-                <img class="image-1" src="../image/paga.png" alt="" />
+                <img class="image-1" src="/image/paga.png" alt="" />
                 <p class="project-name-1">Paga Website Redesign</p>
                 <p class="project-description-1">Paga website redesign.</p>
                 <a
@@ -102,13 +124,13 @@
                   Technologies: <span> HTML, CSS, JavaScript. </span>
                 </p>
                 <div class="image-wrapper">
-                  <img class="image-2" src="../image/paga.png" alt="" />
+                  <img class="image-2" src="/image/paga.png" alt="" />
                 </div>
               </div>
             </div>
             <div class="project-item">
               <div class="project-item-grp-1">
-                <img class="image-1" src="../image/palindrome.png" alt="" />
+                <img class="image-1" src="/image/palindrome.png" alt="" />
                 <p class="project-name-1">PALINDROME</p>
                 <p class="project-description-1">A Palindrome Checker.</p>
                 <a
@@ -151,13 +173,13 @@
                   Technologies: <span> HTML, CSS, JavaScript. </span>
                 </p>
                 <div class="image-wrapper">
-                  <img class="image-2" src="../image//palindrome.png" alt="" />
+                  <img class="image-2" src="/image//palindrome.png" alt="" />
                 </div>
               </div>
             </div>
             <div class="project-item">
               <div class="project-item-grp-1">
-                <img class="image-1" src="../image/Omni food.png" alt="" />
+                <img class="image-1" src="/image/Omni food.png" alt="" />
                 <p class="project-name-1">OMNIFOOD</p>
                 <p class="project-description-1">
                   A smart food delivery subscription website tailored to your
@@ -218,19 +240,15 @@
                     Technologies: <span> HTML, CSS, JavaScript. </span>
                   </p>
                   <div class="image-wrapper">
-                    <img class="image-2" src="../image/Omni food.png" alt="" />
-                    <img
-                      class="image-2"
-                      src="../image/omni food 2.png"
-                      alt=""
-                    />
+                    <img class="image-2" src="/image/Omni food.png" alt="" />
+                    <img class="image-2" src="/image/omni food 2.png" alt="" />
                   </div>
                 </div>
               </div>
             </div>
             <div class="project-item">
               <div class="project-item-grp-1">
-                <img class="image-1" src="../image/MicroSoft.png" alt="" />
+                <img class="image-1" src="/image/MicroSoft.png" alt="" />
                 <p class="project-name-1">Microsoft Website Redesign</p>
                 <p class="project-description-1">
                   Microsoft Landing-page redesign.
@@ -267,13 +285,13 @@
                   Technologies: <span> HTML, CSS. </span>
                 </p>
                 <div class="image-wrapper">
-                  <img class="image-2" src="../image/MicroSoft.png" alt="" />
+                  <img class="image-2" src="/image/MicroSoft.png" alt="" />
                 </div>
               </div>
             </div>
             <div class="project-item">
               <div class="project-item-grp-1">
-                <img class="image-1" src="../image/Drum Pad.png" alt="" />
+                <img class="image-1" src="/image/Drum Pad.png" alt="" />
                 <p class="project-name-1">DRUM PAD</p>
                 <p class="project-description-1">
                   A webpage that is an interactive drum pad that plays different
@@ -319,7 +337,7 @@
                   Technologies: <span> HTML, CSS, JavaScript. </span>
                 </p>
                 <div class="image-wrapper">
-                  <img class="image-2" src="../image/Drum Pad.png" alt="" />
+                  <img class="image-2" src="/image/Drum Pad.png" alt="" />
                 </div>
               </div>
             </div>
@@ -341,8 +359,8 @@
       <footer-side-bar></footer-side-bar>
     </footer>
 
-    <script src="../main.js" type="module"></script>
-    <script src="../sidebar-component.js" type="module"></script>
-    <script src="../footer-sidebar-component.js" type="module"></script>
+    <script src="/main.js" type="module"></script>
+    <script src="/sidebar-component.js" type="module"></script>
+    <script src="/footer-sidebar-component.js" type="module"></script>
   </body>
 </html>
