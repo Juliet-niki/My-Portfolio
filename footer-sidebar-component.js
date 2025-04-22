@@ -104,7 +104,7 @@ z-index:1;
  <!-- -------- HTML FOR SIDEBAR  ------- -->
   
 <div class="side-bar">
-          <a href="../index.html" class="menu-link active-menu" id="home">
+          <a href="/index.html" class="menu-link" id="home">
             <div class="icon-text-wrapper">
               <p class="text-hover">Home</p>
               <svg
@@ -120,7 +120,7 @@ z-index:1;
               </svg>
             </div>
           </a>
-          <a href="../About/about.html" class="menu-link" id="about">
+          <a href="/About/about.html" class="menu-link" id="about">
             <div class="icon-text-wrapper">
               <p class="text-hover">About</p>
               <svg
@@ -136,7 +136,7 @@ z-index:1;
               </svg>
             </div>
           </a>
-          <a href="../Portfolio/portfolio.html" class="menu-link" id="portfolio">
+          <a href="/Portfolio/portfolio.html" class="menu-link" id="portfolio">
             <div class="icon-text-wrapper">
               <p class="text-hover">Portfolio</p>
               <svg
@@ -152,7 +152,7 @@ z-index:1;
               </svg>
             </div>
           </a>
-          <a href="../Contact_Me/contact_me.html" class="menu-link" id="contact">
+          <a href="/Contact_Me/contact_me.html" class="menu-link" id="contact">
             <div class="icon-text-wrapper">
               <p class="text-hover">Contact Me</p>
               <svg
@@ -194,10 +194,14 @@ class FooterSideBar extends HTMLElement {
   }
 
   connectedCallback() {
-    const currentPath = window.location.pathname;
+    const currentPath = window.location.pathname.toLowerCase();
 
     this.shadowRoot.querySelectorAll(".menu-link").forEach((link) => {
-      if (currentPath.includes(link.getAttribute("href").replace("..", ""))) {
+      const linkPath = link.getAttribute("href").toLowerCase();
+      if (
+        currentPath.endsWith(linkPath.replace(".html", "")) ||
+        currentPath.endsWith(linkPath)
+      ) {
         link.classList.add("active-menu");
       } else {
         link.classList.remove("active-menu");
