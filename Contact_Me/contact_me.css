@@ -42,7 +42,7 @@ ul {
   display: grid;
   grid-template-columns: auto 77% 14%;
   gap: 1%;
-  height: 100vh;
+  height: 88vh;
   position: relative;
 }
 
@@ -53,6 +53,7 @@ ul {
 
 .left-side {
   width: fit-content;
+  background-color: aqua;
 }
 
 .left-side img {
@@ -66,6 +67,8 @@ ul {
   gap: 2vw;
   overflow: hidden;
   z-index: 0;
+  margin-top: 5vh;
+  background-color: chartreuse;
 }
 
 .scroll-area {
@@ -81,20 +84,23 @@ ul {
   display: none;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .about-me-text {
   font-family: "work-sans-bold";
-  font-size: 4vw;
-  text-align: center;
+  font-size: 4.5vw;
 }
 
 .Preview-txt {
   font-family: "work-sans-reg";
   font-size: 1.5vw;
   margin-top: 2vh;
-  width: 80%;
+  width: 90%;
   text-align: justify;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .contact-info {
@@ -102,7 +108,7 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 6vh;
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 
 .contact {
@@ -132,7 +138,7 @@ ul {
 .contact a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   font-family: "work-sans-reg";
   width: fit-content;
 }
@@ -142,7 +148,7 @@ ul {
 }
 
 .socials {
-  margin-top: 20vh;
+  margin-top: 15vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,12 +174,10 @@ ul {
 
 .location {
   font-family: "work-sans-reg";
-  font-size: 1.3vw;
-  text-align: justify;
-  margin: 5vh 0 0 7vw;
+  font-size: 1.2vw;
   display: flex;
   align-items: flex-end;
-  gap: 1vw;
+  gap: 0.2vw;
 }
 
 .right-side {
@@ -183,6 +187,7 @@ ul {
   align-items: flex-end;
   gap: 10vh;
   width: 100%;
+  background-color: darkgoldenrod;
 }
 
 #time-txt {
@@ -207,17 +212,16 @@ ul {
 
 @media only screen and (max-width: 1100px) {
   .main-content {
-    margin-top: 8vh;
     align-items: center;
     width: 100%;
   }
 
   .about-me-text {
-    font-size: 4.4vw;
+    font-size: 5vw;
   }
 
   .Preview-txt {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
 
   #time-txt {
@@ -255,7 +259,7 @@ ul {
 
   .contact-info {
     flex-direction: column;
-    gap: 4vh;
+    gap: 2vh;
     margin-top: 5vh;
   }
 
@@ -274,7 +278,7 @@ ul {
   }
 
   .contact a {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
 
   .location {
@@ -282,13 +286,14 @@ ul {
   }
 
   .socials {
-    margin-top: 10vh;
+    margin-top: 8vh;
+    gap: 4vh;
   }
 
   .socials svg,
   .location svg {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
 }
 

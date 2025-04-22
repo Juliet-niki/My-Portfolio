@@ -82,51 +82,24 @@ ul {
   display: none;
 }
 
-.img-about-me-wrapper {
+.about-me {
   display: flex;
-  gap: 2%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-me-text {
   font-family: "work-sans-bold";
-  font-size: 4vw;
+  font-size: 4.5vw;
 }
 
-.image-wrapper {
-  width: auto;
-  margin-top: 3vh;
-}
-
-.image-wrapper img {
-  width: 240px;
-  animation: floatUpDown 7s ease-in infinite;
-}
-
-@keyframes floatUpDown {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(20px, -20px); /* top-right */
-  }
-  50% {
-    transform: translate(0, -35px); /* top-center */
-  }
-  75% {
-    transform: translate(-20px, -20px); /* top-left */
-  }
-  100% {
-    transform: translate(0, 0); /* back to original */
-  }
-}
-
-.img-about-me-wrapper p {
+.Preview-txt {
   font-family: "work-sans-reg";
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   text-align: justify;
   line-height: 1.5;
   margin-top: 2vh;
-  width: 80%;
+  width: 90%;
 }
 
 .my-skills-wrapper {
@@ -139,7 +112,7 @@ ul {
 
 .my-skills-wrapper h2 {
   font-family: "work-sans-bold";
-  font-size: 4vw;
+  font-size: 4.5vw;
   margin-bottom: 2.5vh;
 }
 
@@ -270,33 +243,33 @@ ul {
 }
 
 @media only screen and (max-width: 1200px) {
-  .image-wrapper img {
-    width: 200px;
-  }
 }
 
 @media only screen and (max-width: 1100px) {
   .main-content {
-    margin-top: 8vh;
     align-items: center;
     width: 100%;
   }
 
   .about-me-text,
   .my-skills-wrapper h2 {
-    font-size: 4.1vw;
+    font-size: 5vw;
   }
 
-  .img-about-me-wrapper p {
-    font-size: 1.4vw;
-  }
-
-  .image-wrapper img {
-    width: 170px;
+  .Preview-txt {
+    font-size: 1.8vw;
   }
 
   .skill-item {
-    width: 18vw;
+    width: 21vw;
+  }
+
+  .skill-item p {
+    font-size: 2vw;
+  }
+
+  .my-skills-wrapper h4 {
+    font-size: 2.8vw;
   }
 
   .skills-list img {
@@ -318,31 +291,32 @@ ul {
 }
 
 @media only screen and (max-width: 992px) {
-  .image-wrapper img {
-    width: 150px;
-  }
 }
 
 @media only screen and (max-width: 768px) {
-  .image-wrapper img {
-    width: 110px;
-  }
-
   .about-me-text,
   .my-skills-wrapper h2 {
-    font-size: 4.2vw;
+    font-size: 5vw;
   }
 
-  .img-about-me-wrapper p {
-    font-size: 1.6vw;
+  .Preview-txt {
+    font-size: 2vw;
+  }
+
+  .my-skills-wrapper {
+    margin-top: 5vh;
   }
 
   .skill-item {
-    width: 24vw;
+    width: 28vw;
+  }
+
+  .my-skills-wrapper h4 {
+    font-size: 3vw;
   }
 
   .skill-item p {
-    font-size: 1.8vw;
+    font-size: 2.5vw;
   }
 
   .skills-list {
@@ -370,6 +344,11 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
+  .scroll-area {
+    padding-bottom: 15vh;
+    background-color: blue;
+  }
+
   .skills-list img {
     height: 30px;
     width: 30px;
