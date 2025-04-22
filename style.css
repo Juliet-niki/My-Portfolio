@@ -121,13 +121,12 @@ body {
 .resume-btn {
   display: flex;
   align-items: center;
-  gap: 1.1vw;
-  color: #fff;
+  justify-content: space-between;
   font-family: "work-sans-medium";
-  border: 2px solid #fff;
-  border-radius: 11px;
-  width: fit-content;
-  padding: 1vh 1vw 1vh 1vw;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  width: 16vw;
+  padding-left: 1vw;
   margin: 3vh 0 0 50%;
   transform: translateX(-50%);
   background: none;
@@ -147,13 +146,17 @@ body {
 
 .download-icon {
   background-color: #74c0fc;
-  width: 45px;
-  height: 45px;
-  padding: 0.3vh 0.7vw;
-  border-radius: 11px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.download-icon svg {
+  width: 20px;
+  height: 20px;
 }
 
 .right-side {
@@ -214,12 +217,16 @@ body {
   }
 
   .resume-btn a {
-    font-size: 1.6vw;
+    font-size: 1.8vw;
+  }
+
+  .resume-btn {
+    width: 18vw;
   }
 
   .download-icon {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
   }
 
   #time-txt {
@@ -232,6 +239,9 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
+  .resume-btn {
+    width: 22vw;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -240,18 +250,17 @@ body {
   }
 
   .resume-btn a {
-    font-size: 2.1vw;
+    font-size: 2vw;
+  }
+
+  .resume-btn {
+    width: 25vw;
   }
 
   .download-icon {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-  }
-
-  .download-icon svg {
-    width: 18px;
-    height: 18px;
   }
 
   .image-wrapper img {
@@ -270,5 +279,23 @@ body {
 @media only screen and (max-width: 600px) {
   .name-typer {
     border-right: 2px solid #fff;
+  }
+  .resume-btn a {
+    font-size: 2.1vw;
+  }
+
+  .resume-btn {
+    width: 25vw;
+  }
+
+  .download-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+  .download-icon svg {
+    width: 15px;
+    height: 15px;
   }
 }
