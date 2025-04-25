@@ -29,11 +29,7 @@ template.innerHTML = `
 /*-------- CSS FOR SIDEBAR  -------*/
 
 .side-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.3vh 20vw;
-  gap: 5vh;
+  padding: 1.3vh 0;
   z-index:1;
   background-color: #323f58;
   visibility: hidden;
@@ -43,19 +39,31 @@ template.innerHTML = `
   left: 0;
 }
 
+.menu-link-wrapper{
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin: 0 auto;
+  }
+
 .menu-link {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
   background-color: #989898;
   border-radius: 50%;
+}
+
+.icon-text-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
   height: 40px;
   width: 40px;
 }
 
 .menu-link svg{
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
 }
 
 .menu-link:hover {
@@ -66,15 +74,11 @@ template.innerHTML = `
   background-color: #1f9af8;
 }
 
-.icon-text-wrapper {
-  display: flex;
-  position: relative;
-}
-
 .text-hover {
   position: absolute;
-  left: 160%;
-  top: 20%;
+  left: 120%;
+  top: 50%;
+  transform: translateY(-50%);
   font-family: "work-sans-reg";
   font-size: 1.7vw;
   color: #fff;
@@ -99,10 +103,7 @@ template.innerHTML = `
 }
 
 @media only screen and (max-width: 600px){
-.menu-link {
-  height: 35px;
-  width: 35px;
-}
+
 
 .menu-link svg{
   height: 18px;
@@ -115,6 +116,7 @@ template.innerHTML = `
  <!-- -------- HTML FOR SIDEBAR  ------- -->
   
 <div class="side-bar">
+        <div class="menu-link-wrapper">
           <a href="/index.html" class="menu-link" id="home">
             <div class="icon-text-wrapper">
               <p class="text-hover">Home</p>
@@ -176,6 +178,7 @@ template.innerHTML = `
             </div>
           </a>
         </div>
+      </div>
       
 `;
 
@@ -215,24 +218,11 @@ class FooterSideBar extends HTMLElement {
       }
     });
 
-    switch (this.active) {
-      case "home":
-        const home = this.shadowRoot.getElementById("home");
-        home.setAttribute("class", "active-menu");
-        break;
-      case "about":
-        const about = this.shadowRoot.getElementById("about");
-        about.setAttribute("class", "active-menu");
-        break;
-      case "portfolio":
-        const portfolio = this.shadowRoot.getElementById("portfolio");
-        portfolio.setAttribute("class", "active-menu");
-        break;
-      case "contact":
-        const contact = this.shadowRoot.getElementById("contact");
-        contact.setAttribute("class", "active-menu");
-        break;
-    }
+    const activeId = this.active;
+    const activeLink = this.shadowRoot.getElementById(activeId);
+    activeLink
+      ?.querySelector(".icon-text-wrapper")
+      ?.classList.add("active-menu");
   }
 }
 

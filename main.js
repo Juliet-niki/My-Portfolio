@@ -69,11 +69,10 @@ const closeIcons = document.querySelectorAll(".close-icon");
 const projectItems = document.querySelectorAll(".project-item");
 
 projectItems.forEach((item) => {
-  const description = item.querySelector(".project-descriptions");
+  const description = item.querySelector(".project-description-wrapper");
 
   item.addEventListener("click", () => {
     description.style.display = "block";
-    document.body.classList.add("disable-interaction");
   });
 });
 
@@ -81,9 +80,10 @@ closeIcons.forEach((icon) => {
   icon.addEventListener("click", (event) => {
     event.stopPropagation();
     const parentItem = icon.closest(".project-item");
-    const description = parentItem.querySelector(".project-descriptions");
+    const description = parentItem.querySelector(
+      ".project-description-wrapper"
+    );
 
     description.style.display = "none";
-    document.body.classList.remove("disable-interaction");
   });
 });

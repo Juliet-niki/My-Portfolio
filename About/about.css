@@ -41,30 +41,50 @@ ul {
 
 .top-container {
   display: grid;
-  grid-template-columns: 7% 77% 14%;
+  grid-template-rows: 16% 83%;
   gap: 1%;
   margin: 0 3%;
 }
 
-.left-side,
-.right-side {
-  overflow: hidden;
-}
-
 .left-side {
-  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
-.left-side img {
-  width: 100%;
+.logo-wrapper img {
   border-radius: 11px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.date-time-wrapper {
+  color: #fff;
+  text-align: right;
+}
+
+#time-txt {
+  font-family: "work-sans-bold";
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+#date-txt {
+  font-family: "work-sans-reg";
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 87% 13%;
 }
 
 .main-content {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 5vh;
   gap: 2vw;
   overflow: hidden;
   z-index: 0;
@@ -72,7 +92,6 @@ ul {
 
 .scroll-area {
   overflow-y: scroll;
-  padding: 0 1vw;
   scrollbar-width: none;
   -ms-overflow-style: none;
   color: #fff;
@@ -99,8 +118,8 @@ ul {
   font-size: 1.5vw;
   text-align: justify;
   line-height: 1.5;
-  margin-top: 2vh;
-  width: 90%;
+  margin-top: 1vh;
+  width: 95%;
 }
 
 .my-skills-wrapper {
@@ -114,19 +133,19 @@ ul {
 .my-skills-wrapper h2 {
   font-family: "work-sans-bold";
   font-size: 4.5vw;
-  margin-bottom: 2.5vh;
+  margin-bottom: 1.2vh;
 }
 
 .my-skills-wrapper h4 {
   font-family: "work-sans-medium";
   font-size: 2.5vw;
-  margin-bottom: 2vh;
+  margin-bottom: 1.8vh;
 }
 
 .skills-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.2vw;
+  gap: 2.5vw;
   margin-top: 2vh;
 }
 
@@ -226,23 +245,6 @@ ul {
   width: 100%;
 }
 
-#time-txt {
-  font-family: "work-sans-bold";
-  font-size: 2vw;
-  font-weight: 500;
-}
-
-#date-txt {
-  font-family: "work-sans-reg";
-  font-size: 1.2vw;
-  font-weight: 500;
-}
-
-.date-time-wrapper {
-  color: #fff;
-  text-align: right;
-}
-
 footer {
   grid-column: 1/ -1;
   display: flex;
@@ -252,6 +254,10 @@ footer {
 }
 
 @media only screen and (max-width: 1100px) {
+  .top-container {
+    grid-template-rows: 12% 87%;
+  }
+
   .main-content {
     align-items: center;
     width: 100%;
@@ -259,11 +265,11 @@ footer {
 
   .about-me-text,
   .my-skills-wrapper h2 {
-    font-size: 5vw;
+    font-size: 5.2vw;
   }
 
   .Preview-txt {
-    font-size: 1.8vw;
+    font-size: 2.1vw;
   }
 
   .skill-item {
@@ -288,25 +294,40 @@ footer {
   }
 
   #time-txt {
-    font-size: 2.1vw;
+    font-size: 2.5vw;
   }
 
   #date-txt {
-    font-size: 1.4vw;
+    font-size: 1.7vw;
   }
 }
 
 @media only screen and (max-width: 992px) {
+  .top-container {
+    grid-template-rows: 11% 88%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .container {
+    padding-top: 5%;
+  }
+
+  .main-content {
+    grid-column: 1/-1;
+  }
+
+  .top-container {
+    grid-template-rows: 10% 89%;
+  }
+
   .about-me-text,
   .my-skills-wrapper h2 {
-    font-size: 5vw;
+    font-size: 5.8vw;
   }
 
   .Preview-txt {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
 
   .my-skills-wrapper {
@@ -318,7 +339,7 @@ footer {
   }
 
   .my-skills-wrapper h4 {
-    font-size: 3vw;
+    font-size: 3.2vw;
   }
 
   .skill-item p {
@@ -327,7 +348,7 @@ footer {
 
   .skills-list {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.8vw;
+    gap: 4vw;
     margin-top: 2vh;
   }
 
@@ -339,27 +360,36 @@ footer {
   .java img {
     width: 40px;
   }
-
-  #time-txt {
-    font-size: 2.5vw;
-  }
-
-  #date-txt {
-    font-size: 1.5vw;
-  }
 }
 
 @media only screen and (max-width: 600px) {
-  .scroll-area {
-    padding-bottom: 15vh;
+  .top-container {
+    grid-template-rows: 6% 93%;
+  }
+
+  .about-me-text,
+  .my-skills-wrapper h2 {
+    font-size: 6vw;
+  }
+
+  .Preview-txt {
+    font-size: 3vw;
+  }
+
+  .my-skills-wrapper h4 {
+    font-size: 3.5vw;
+  }
+
+  .skill-item {
+    width: 30vw;
   }
 
   .skills-list img {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
   }
 
   .java img {
-    width: 35px;
+    width: 30px;
   }
 }
