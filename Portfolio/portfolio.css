@@ -173,7 +173,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  margin-top: 1.5vh;
+  margin-top: 1vh;
 }
 
 .project-description-wrapper {
@@ -186,7 +186,8 @@ header {
 }
 
 .project-descriptions {
-  background-color: #d6ecff;
+  background-color: #a4ccf0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   width: 50vw;
   height: 62vh;
   padding: 1vh 2vw 5vh 2vw;
@@ -218,7 +219,7 @@ header {
 
 .project-description-2 {
   font-family: "work-sans-reg";
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   margin-top: 0.4vh;
   color: #686868;
   line-height: 4vh;
@@ -324,21 +325,21 @@ footer {
   }
 
   .project-name-2 {
-    font-size: 2.4vw;
+    font-size: 2.5vw;
   }
 
   .project-description-2 {
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     line-height: 3vh;
   }
 
   .project-link-box,
   .technologies {
-    font-size: 1.5vw;
+    font-size: 1.7vw;
   }
 
   .project-link-2 {
-    font-size: 1.4vw;
+    font-size: 1.5vw;
   }
 
   .close-icon svg {
@@ -350,6 +351,23 @@ footer {
 @media only screen and (max-width: 992px) {
   .top-container {
     grid-template-rows: 11% 88%;
+  }
+
+  .project-name-2 {
+    font-size: 2.7vw;
+  }
+
+  .project-description-2 {
+    font-size: 1.6vw;
+  }
+
+  .project-link-box,
+  .technologies {
+    font-size: 1.9vw;
+  }
+
+  .project-link-2 {
+    font-size: 1.6vw;
   }
 }
 
@@ -378,11 +396,11 @@ footer {
   }
 
   .project-name-1 {
-    font-size: 2.1vw;
+    font-size: 2.7vw;
   }
 
   .project-description-1 {
-    font-size: 1.8vw;
+    font-size: 2.2vw;
   }
 
   .project-link-1 {
@@ -400,20 +418,20 @@ footer {
   }
 
   .project-name-2 {
-    font-size: 2.6vw;
+    font-size: 2.9vw;
   }
 
   .project-description-2 {
-    font-size: 1.4vw;
+    font-size: 1.8vw;
   }
 
   .project-link-box,
   .technologies {
-    font-size: 1.5vw;
+    font-size: 2.1vw;
   }
 
   .project-link-2 {
-    font-size: 1.6vw;
+    font-size: 1.9vw;
   }
 
   .close-icon svg {
@@ -435,8 +453,12 @@ footer {
     font-size: 3vw;
   }
 
+  .project-name-2 {
+    font-size: 3.2vw;
+  }
+
   .project-description-2 {
-    font-size: 1.5vw;
+    font-size: 2vw;
     line-height: 2vh;
   }
 
