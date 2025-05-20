@@ -284,12 +284,12 @@ footer {
   }
 
   .contact {
-    width: 28vw;
+    width: 30vw;
     padding: 1vh 0 1vh 2vw;
   }
 
   .icon-text {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 
   .icon-text svg {
@@ -298,11 +298,11 @@ footer {
   }
 
   .contact a {
-    font-size: 2vw;
+    font-size: 2.4vw;
   }
 
   .location {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
 
   .socials {
@@ -312,13 +312,13 @@ footer {
 
   .socials svg,
   .location svg {
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
   }
 
   .icon-text svg {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
   }
 }
 
