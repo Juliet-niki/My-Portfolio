@@ -53,11 +53,6 @@ ul {
   box-sizing: border-box;
 }
 
-.logo-wrapper,
-.date-time-wrapper {
-  flex: 1;
-}
-
 .logo-wrapper img {
   border-radius: 11px;
   height: 100%;
