@@ -44,9 +44,12 @@ body {
 
 .left-side {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
+  /* justify-content: space-between; */
+  /* width: 100%; */
+}
+
+.logo-wrapper {
+  width: 20%;
 }
 
 .logo-wrapper img {
@@ -58,7 +61,7 @@ body {
 .date-time-wrapper {
   color: #fff;
   text-align: right;
-  height: 100%;
+  width: 80%;
 }
 
 #time-txt {
