@@ -47,6 +47,11 @@ body {
   justify-content: space-between;
 }
 
+.logo-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .logo-wrapper img {
   border-radius: 11px;
   height: 100%;
