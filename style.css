@@ -44,24 +44,19 @@ body {
 
 .left-side {
   display: flex;
-  /* justify-content: space-between; */
-  /* width: 100%; */
-}
-
-.logo-wrapper {
-  width: 20%;
+  justify-content: space-between;
 }
 
 .logo-wrapper img {
   border-radius: 11px;
   height: 100%;
+  width: 100%;
   object-fit: contain;
 }
 
 .date-time-wrapper {
   color: #fff;
   text-align: right;
-  width: 80%;
 }
 
 #time-txt {
