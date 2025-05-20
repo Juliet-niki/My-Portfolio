@@ -49,11 +49,17 @@ ul {
 .left-side {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo-wrapper,
+.date-time-wrapper {
+  flex: 1;
 }
 
 .logo-wrapper img {
   border-radius: 11px;
-  width: 100%;
   height: 100%;
   object-fit: contain;
 }
