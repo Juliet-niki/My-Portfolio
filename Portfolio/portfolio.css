@@ -49,7 +49,6 @@ ul {
 .left-side {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
 }
 
 .logo-wrapper img {
