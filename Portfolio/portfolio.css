@@ -380,7 +380,6 @@ footer {
     padding-right: 0;
     margin-left: -2vw;
     margin-right: -2vw;
-    height: calc(100vh - 8.5vh);
   }
 
   .main-content {
@@ -393,6 +392,7 @@ footer {
     justify-content: center;
     width: 100%;
     background-color: #323f58;
+    margin: 0 0;
   }
 
   .scroll-area {
