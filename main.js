@@ -87,3 +87,12 @@ closeIcons.forEach((icon) => {
     description.style.display = "none";
   });
 });
+
+/*  FUNCTION FOR VIEW HEIGHT IN MOBILE */
+function setRealVH() {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+}
+
+window.addEventListener("resize", setRealVH);
+window.addEventListener("load", setRealVH);
