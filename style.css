@@ -283,7 +283,7 @@ body {
 
   .container {
     flex-direction: column;
-    height: 88.5;
+    /* height: 88.5; */
   }
 
   .main-content {
@@ -296,6 +296,7 @@ body {
     justify-content: center;
     width: 100%;
     background-color: #323f58;
+    margin-top: auto;
   }
 
   .name-display {
@@ -343,7 +344,7 @@ body {
   }
 
   .container {
-    height: 90.5vh;
+    /* height: 90.5vh; */
   }
 
   .name-typer {
