@@ -103,9 +103,7 @@ template.innerHTML = `
 }
 
 @media only screen and (max-width: 600px){
-
-
-.menu-link svg{
+.menu-link svg {
   height: 18px;
   width: 18px;
 }

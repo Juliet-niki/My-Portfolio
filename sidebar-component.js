@@ -29,24 +29,23 @@ template.innerHTML = `
 /*-------- CSS FOR SIDEBAR  -------*/
 
 .side-bar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 4vh;
-  width: 100%;
-   z-index:1;
-  
+  z-index:1;
+  padding: 2vh 0;
 }
+
+.menu-link-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4vh;
+  }
 
 .menu-link {
   display: inline-flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: #989898;
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
 }
 
 .menu-link:hover {
@@ -60,12 +59,22 @@ template.innerHTML = `
 .icon-text-wrapper {
   display: flex;
   position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+}
+
+.menu-link svg{
+  width:30px;
+  height:30px;
 }
 
 .text-hover {
   position: absolute;
-  right: 180%;
-  top: 20%;
+  right: 130%;
+  top: 50%;
+  transform: translateY(-50%);
   font-family: "work-sans-reg";
   font-size: 1.2vw;
   color: #fff;
@@ -83,7 +92,7 @@ template.innerHTML = `
 }
 
 @media only screen and (max-width: 1100px){
-.menu-link {
+.icon-text-wrapper {
   height: 52px;
   width: 52px;
 }
@@ -94,28 +103,61 @@ template.innerHTML = `
 }
 
 .text-hover {
-  right: 175%;
+  right: 130%;
+  font-size: 1.3vw;
+}
 
+}
+
+@media only screen and (max-width: 992px) {
+.text-hover {
+  right: 125%;
+  font-size: 1.5vw;
 }
 
 }
 
 @media only screen and (max-width: 768px){
-.side-bar{
-display: none;}
 
+.side-bar {
+  padding: 1.2vh 0;
 }
 
-@media only screen and (max-width: 600px){
-.menu-link {
-  height: 30px;
-  width: 30px;
+.menu-link-wrapper{
+  justify-content: center;
+  flex-direction: row;
+  gap: 12vw;
+}
+
+.icon-text-wrapper {
+  height: 40px;
+  width: 40px;
 }
 
 .menu-link svg{
   height: 20px;
   width: 20px;
 }
+
+.text-hover {
+  left: 120%;
+  font-size: 1.8vw;
+}
+
+}
+
+@media only screen and (max-width: 600px){
+
+.icon-text-wrapper {
+  height: 35px;
+  width: 35px;
+}
+
+.menu-link svg{
+  height: 18px;
+  width: 18px;
+}
+  
 
 }
 
@@ -124,14 +166,14 @@ display: none;}
  <!-- -------- HTML FOR SIDEBAR  ------- -->
   
 <div class="side-bar">
+      <div class="menu-link-wrapper">
           <a href="/index.html" class="menu-link" id="home">
             <div class="icon-text-wrapper">
               <p class="text-hover">Home</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 576 512"
-                width="30"
-                height="30"
+                
               >
                 <path
                   fill="#ffffff"
@@ -146,8 +188,6 @@ display: none;}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
-                width="30"
-                height="30"
               >
                 <path
                   fill="#ffffff"
@@ -162,8 +202,6 @@ display: none;}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                width="30"
-                height="30"
               >
                 <path
                   fill="#ffffff"
@@ -178,8 +216,6 @@ display: none;}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                width="30"
-                height="30"
               >
                 <path
                   fill="#ffffff"
@@ -189,6 +225,7 @@ display: none;}
             </div>
           </a>
         </div>
+      </div>
       
 `;
 

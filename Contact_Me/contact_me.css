@@ -46,7 +46,7 @@ ul {
   margin: 0 3%;
 }
 
-.left-side {
+.nav-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
