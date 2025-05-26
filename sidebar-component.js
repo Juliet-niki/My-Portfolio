@@ -102,18 +102,26 @@ template.innerHTML = `
   width: 30px;
 }
 
-.text-hover {
-  right: 130%;
-  font-size: 1.3vw;
-}
 
 }
 
 @media only screen and (max-width: 992px) {
 .text-hover {
   right: 125%;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
+
+.icon-text-wrapper {
+  height: 45px;
+  width: 45px;
+}
+
+.menu-link svg{
+  height: 25px;
+  width: 25px;
+}
+
+
 
 }
 
