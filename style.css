@@ -191,7 +191,7 @@ body {
   }
 
   .container {
-    height: 86.5vh;
+    /* height: 86.5vh; */
   }
 
   #time-txt {
@@ -262,7 +262,7 @@ body {
   }
 
   .container {
-    height: 88vh;
+    /* height: 88vh; */
   }
 
   .resume-btn {
