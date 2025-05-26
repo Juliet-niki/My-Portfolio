@@ -121,8 +121,6 @@ template.innerHTML = `
   width: 25px;
 }
 
-
-
 }
 
 @media only screen and (max-width: 768px){

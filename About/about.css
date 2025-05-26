@@ -83,6 +83,7 @@ ul {
   -ms-overflow-style: none;
   padding-bottom: 10vh;
   color: #fff;
+  margin-bottom: 3vh;
 }
 
 .main-content::-webkit-scrollbar {
@@ -308,6 +309,7 @@ ul {
     padding-right: 0;
     margin-left: -2vw;
     margin-right: -2vw;
+    height: calc(100vh - 8.5vh);
   }
 
   .main-content {
