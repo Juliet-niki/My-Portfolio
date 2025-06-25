@@ -177,7 +177,7 @@ header {
 }
 
 .project-descriptions {
-  background-color: #a4ccf0;
+  background-color: #dbeaf7;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   width: 50vw;
   height: 62vh;
@@ -212,7 +212,7 @@ header {
   font-family: "work-sans-reg";
   font-size: 1.2vw;
   margin-top: 0.4vh;
-  color: #686868;
+  color: #353535;
   line-height: 4vh;
   text-align: justify;
   width: fit-content;
@@ -237,7 +237,7 @@ header {
   font-family: "work-sans-reg";
   font-size: 1.2vw;
   margin-top: 0.4vh;
-  color: #686868;
+  color: #353535;
 }
 
 .image-wrapper {
