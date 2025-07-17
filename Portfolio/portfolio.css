@@ -126,17 +126,13 @@ header {
   cursor: pointer;
 }
 
-.project-item-grp-1 {
-  transition: all 0.5s ease-in-out;
-}
-
-.project-item-grp-1:hover {
-  transition: all 0.5s ease-in-out;
-  transform: scale(1.03);
-}
-
 .image-1 {
   width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.image-1:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.01);
 }
 
 .project-name-1 {
@@ -164,7 +160,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  margin-top: 1vh;
+  margin: 1vh 0;
 }
 
 .project-description-wrapper {
@@ -193,8 +189,9 @@ header {
   overflow-y: scroll;
   padding: 0 1vw;
   scrollbar-width: none;
-  height: 95%;
-  padding-bottom: 2vh;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  height: 90%;
+  padding-bottom: 5vh;
 }
 
 .project-description-scroll-area::-webkit-scrollbar {
@@ -230,18 +227,28 @@ header {
   color: #3b2ef7;
   font-family: "work-sans-reg";
   font-size: 1.2vw;
-  margin-left: 1.5vw;
+  margin-left: 1vw;
 }
 
 .technologies {
   font-family: "work-sans-reg";
   font-size: 1.2vw;
   margin-top: 0.4vh;
+  color: #020202;
+  display: flex;
+  gap: 5px;
+}
+
+.technology {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
   color: #353535;
 }
 
 .image-wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 2vw;
   margin-top: 4vh;
   justify-content: center;
