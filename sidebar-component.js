@@ -218,7 +218,7 @@ template.innerHTML = `
           </a>
           <a href="/Contact_Me/contact_me.html" class="menu-link" id="contact">
             <div class="icon-text-wrapper">
-              <p class="text-hover">Contact Me</p>
+              <p class="text-hover">Contact</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
