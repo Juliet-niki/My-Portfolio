@@ -12,7 +12,7 @@ export const Projects = [
       "Tailwind CSS",
       "HTML",
       "CSS",
-      "JavaScript",
+      "TypeScript",
     ],
     image2: [
       "../image/stack2.png",
@@ -54,7 +54,7 @@ export const Projects = [
       "Angular Material",
       "HTML",
       "CSS",
-      "JavaScript",
+      "TypeScript",
     ],
     image2: ["../image/silver2.png", "../image/silver3.png"],
   },
