@@ -24,6 +24,23 @@ export const Projects = [
     ],
   },
   {
+    image1: "../image/agro.png",
+    projectName: "AgroConnect",
+    projectDescription1: "A website that connects farmers with buyers.",
+    projectLink: "https://silverstarproperties.netlify.app/",
+    projectDescription2:
+      "AgroConnect is a platform that aids farmers in selling their crops. Buyers can browse through for produces, buys thems and get them delivered to them",
+    technologies: [
+      "Next.JS",
+      "Tailwind CSS",
+      "Shadcn Ui",
+      "HTML",
+      "CSS",
+      "TypeScript",
+    ],
+    image2: ["../image/agro.png"],
+  },
+  {
     image1: "../image/silver1.png",
     projectName: "Silverstar Property",
     projectDescription1:
