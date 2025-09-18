@@ -24,6 +24,23 @@ export const Projects = [
     ],
   },
   {
+    image1: "../image/studio1.png",
+    projectName: "StackStudio",
+    projectDescription1: "A Landing-page for a creative studio.",
+    projectLink: "https://stackstudio.netlify.app/",
+    projectDescription2:
+      "An AI web app for generating images from text prompts. Users can input text and receive a generated image. The app is built with Next.js, Tailwind CSS, and TypeScript.",
+    technologies: ["Next.JS", "Tailwind CSS", "HTML", "CSS", "TypeScript"],
+    image2: [
+      "../image/studio2.png",
+      "../image/studio3.png",
+      "../image/studio4.png",
+      "../image/studio5.png",
+      "../image/studio6.png",
+      "../image/studio7.png",
+    ],
+  },
+  {
     image1: "../image/agro.png",
     projectName: "AgroConnect",
     projectDescription1: "A website that connects farmers with buyers.",
