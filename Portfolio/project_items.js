@@ -58,6 +58,33 @@ export const Projects = [
     image2: ["../image/agro.png"],
   },
   {
+    image1: "../image/flagit1.png",
+    projectName: "FlagIT",
+    projectDescription1: "A flag game",
+    projectLink: "https://flagit.netlify.app/",
+    projectDescription2:
+      "A flag game website that allows users choose the flag country and score points for correct answers. Datas are gotten from an API.",
+    technologies: ["React", "Tailwind CSS", "HTML", "CSS", "TypeScript"],
+    image2: ["../image/flagit1.png", "../image/flagit2.png"],
+  },
+
+  {
+    image1: "../image/travel.png",
+    projectName: "TravelLens",
+    projectDescription1:
+      "A website that helps you get information about a country.",
+    projectLink: "https://travel-lens.netlify.app/",
+    projectDescription2:
+      "A website that helps you get information about a country and also check weather condition of a city. Datas are gotten from an API.",
+    technologies: ["React", "Tailwind CSS", "HTML", "CSS", "TypeScript"],
+    image2: [
+      "../image/travel2.png",
+      "../image/travel3.png",
+      "../image/travel4.png",
+    ],
+  },
+
+  {
     image1: "../image/silver1.png",
     projectName: "Silverstar Property",
     projectDescription1:
