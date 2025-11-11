@@ -40,6 +40,19 @@ export const Projects = [
       "../image/studio7.png",
     ],
   },
+
+  {
+    image1: "../image/trackora.png",
+    projectName: "Trackora",
+    projectDescription1:
+      "A to-do list app that allows users to add, edit, and delete tasks.",
+    projectLink: "https://trackora.netlify.app/",
+    projectDescription2:
+      "A to-do list app that allows users to add, edit, and delete tasks. Checked tasks are displayed with a line-through.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    image2: ["../image/trackora2.png", "../image/trackora3.png"],
+  },
+
   {
     image1: "../image/agro.png",
     projectName: "AgroConnect",
